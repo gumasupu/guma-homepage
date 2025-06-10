@@ -11,28 +11,42 @@
         <link rel="stylesheet" href="style.css">
         <!--CSSファイルを適用。-->
 
-        <title>My First Web Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--様々なデバイスでそれぞれ画面の幅を基準にWEBページを構成。-->
+
+        <title>Single's Pasta</title>
     </head>
+
+
 
     <body>
 
     <header>
-        <!--Navbar_Components_bootstrap-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <!--Navbar_Components_Document_Bootstrap-->
+        <nav class="navbar navbar-expand-lg bg-custom-color py-2 fixed-top">
+        <!--py-3:Spacing_Utilities_Document_Bootstrap-->
             <div class="container">
                 <!--"-fluid"を取ると画面サイズに応じてリロケーションする。-->
-                <a class="navbar-brand" href="#">Navbar scroll</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <a class="navbar-brand" href="#">
+                    <h2>独身ぱすた</h2>
+                    <!--<h2>JWELL MEET</h2>-->
+                </a>
+
+<!--                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--                    <span class="navbar-toggler-icon"></span>-->
+<!--                </button>-->
+
+                <!--<div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="&#45;&#45;bs-scroll-height: 100px;">
+
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="#">Link</a>
                         </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Link
@@ -44,6 +58,7 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link disabled">Link</a>
                         </li>
@@ -52,30 +67,72 @@
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
-                </div>
+                </div>-->
             </div>
         </nav>
     </header>
 
-    <main>
-        <h1>JWELL MEET</h1>
-        <p>黄金の風
-            未知なる体験を求めて、日々新しい世界を探求する時代。
-            このサイトは、そんなあなたの「おいしい冒険」をサポートするために生まれました。<br>
-            厳選した食品や話題の商品をリアルレビューし、あなたの人生に黄金の体験をお届けします。
-        </p>
-        <!-- <a href="https://www.example.com">Learn more</a> -->
-        <img src="./images/kt.png" alt="サンプル画像" width="200px" height="200px">
 
-        <ul> <!-- ul,liタグ：リストを生成するタグ -->
-            <li>2025年</li>
-            <li>2026年</li>
-            <li>2027年</li>
-        </ul>
+    <main>
+
+        <!--hero section bootstrap-->
+        <div class="hero" id="home">
+            <!--heroはwebデザインでよく使われる慣習的なクラス名で目立たせたい部分によく使われている。-->
+
+            <div class="container">
+                <div class="row">
+                    <!--containerとrowをあてると画面を12分割される。-->
+                    <div class="col-lg-5 mx-auto">
+                        <!--lg_Breakpoints_Layout_Documents_Bootstrap >=992px-->
+                        <!--mx-auto:列の左右幅を自動的に中央に寄せる。-->
+
+                        <h4 style="margin-top:5rem; margin-bottom:5rem;">
+                            このサイトは独身の筆者のささやかな食卓を、日々Blogしています。<br>
+                            応援よろしくお願いします。
+                        </h4>
+
+                        <img src="./images/kt.png" alt="サンプル画像" width="150px" height="150px" style="border-radius: 50%; margin-bottom: 10rem;">
+
+                        <!--<p>黄金の風
+                            未知なる体験を求めて、日々新しい世界を探求する時代。
+                            このサイトは、そんなあなたの「おいしい冒険」をサポートするために生まれました。<br>
+                            厳選した食品や話題の商品をリアルレビューし、あなたの人生に黄金の体験をお届けします。
+                        </p>-->
+
+                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor explicabo minus perspiciatis placeat sed tempore?</p>-->
+                        <!--lorem:ランダムに文字列を作成する機能（15として、タブを押すと15字のランダム文字列を生成できる。）-->
+
+                        <!--<a class="btn btn-primary" href="#" role="button">Learn more</a>
+                        <a class="btn btn-outline-light" href="#" role="button">Learn more</a>-->
+                        <!--button設置：hrefはリンクの設定で#タグ名で指定すると、そこのタグまでジャンプする。#だけだと何もしてい指定していないという意味でページ上部に遷移する。-->
+                    </div>
+
+
+                    <!--article section-->
+                    <article id="2025-06-13">
+
+                        <h4 class="left-align">
+                            2025年 6月 12日
+                        </h4>
+                        <div>
+                            <img class="photo" src="html/2025-06-13/resize3048.jpeg" alt="Aglio e olio">
+                            <img class="photo" src="html/2025-06-13/resize3049.jpeg" alt="lemon fresh cream">
+                            <img class="photo" src="html/2025-06-13/resize3052.jpeg" alt="pasta">
+                        </div>
+
+                    </article>
+
+
+                </div>
+            </div>
+        </div>
+
 
     </main>
 
+
     <footer></footer>
+
 
     </body>
 

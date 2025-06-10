@@ -1,0 +1,44 @@
+
+/*文字サイズと配置*/
+html{
+    font-size: 62.5%;
+    text-align: center;
+}
+
+.left-align{
+    text-align: left;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+
+
+
+/*色設定*/
+body{
+    /*background-color: rgba(230, 225, 200, 0.20);*/
+    color: white;
+}
+.bg-custom-color{
+    background-color: rgba(163, 177, 237, 0.75);
+}
+
+
+
+
+/*写真サイズ設定*/
+.photo{
+    width: 20rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+/*背景画像の設定*/
+.hero{
+    background-image: url("./images/shooting-star.webp");
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
