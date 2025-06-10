@@ -1,0 +1,66 @@
+
+/*文字サイズと配置*/
+html{
+    font-size: 62.5%;
+    text-align: center;
+    background-color: rgb(10, 15, 30);
+}
+
+.left-align{
+    /*text-align: left;*/
+    display: block;
+    margin-bottom: 1rem;
+}
+.article-margins{
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+}
+
+
+/*色設定*/
+body{
+    /*background-color: rgba(230, 225, 200, 0.20);*/
+    color: white;
+}
+.bg-custom-color{
+    background-color: rgba(163, 177, 237);
+}
+
+
+/*写真サイズ設定*/
+.photo{
+    width: 20rem;
+    /*margin: 1rem;*/
+    border-radius: 1rem;
+    display: inline;
+}
+figure{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+figcaption{
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 0.3rem;
+}
+article > div{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+
+
+/*背景画像の設定*/
+.hero{
+    background-image: url("./images/shooting-star.webp");
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 1000vh;
+}
